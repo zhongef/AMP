@@ -1,0 +1,18 @@
+digraph "Control-flow graph for function '_Z41__static_initialization_and_destruction_0ii(a1, a2)'." {
+  label="Control-flow graph for function '_Z41__static_initialization_and_destruction_0ii(a1, a2)'.";
+  node [shape=record];
+
+  Node140736619792624 [label="{entry:\l  a1\l  a2\l}"];
+  Node140736619792624 -> Node140736622420592;
+  Node140736622420592 [label="{  result\l}"];
+  Node140736622420592 -> Node140736622309584;
+  Node140736622309584 [label="{  if ((a1 == 1) == (a2 == 65535)):\l}"];
+  Node140736622309584 -> Node140736622229424 [label="(a1 == 1) == (a2 == 65535)"];
+  Node140736622309584 -> Node140736622313120 [label="(a1 == 1) != (a2 == 65535)"];
+  Node140736622229424 [label="{0xadc:\l  _ZNSt8ios_base4InitC1Ev()\l  v1 = *(IntToPtrCastExpr\<ptr\>(2101240))\l  v2 = __cxa_atexit(IntToPtrCastExpr\<ptr\>(v1), &(g7), &(g4))\l  result = v2\l}"];
+  Node140736622229424 -> Node140736622313120;
+  Node140736622313120 [label="{0xb05:\l  return result\l}"];
+  Node140736622313120 -> Node140736622216288;
+  Node140736622216288 [label="{exit:\l}"];
+
+}

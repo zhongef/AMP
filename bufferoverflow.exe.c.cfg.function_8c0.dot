@@ -1,0 +1,11 @@
+digraph "Control-flow graph for function 'function_8c0(*a1, *a2)'." {
+  label="Control-flow graph for function 'function_8c0(*a1, *a2)'.";
+  node [shape=record];
+
+  Node140736622374288 [label="{entry:\l  a1\l  a2\l}"];
+  Node140736622374288 -> Node140736622227664;
+  Node140736622227664 [label="{0x8c0:\l  return _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc(a1, a2)\l}"];
+  Node140736622227664 -> Node140736622226496;
+  Node140736622226496 [label="{exit:\l}"];
+
+}

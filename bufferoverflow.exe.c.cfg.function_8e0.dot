@@ -1,0 +1,11 @@
+digraph "Control-flow graph for function 'function_8e0(a1)'." {
+  label="Control-flow graph for function 'function_8e0(a1)'.";
+  node [shape=record];
+
+  Node140736622205728 [label="{entry:\l  a1\l}"];
+  Node140736622205728 -> Node140736622520096;
+  Node140736622520096 [label="{0x8e0:\l  return _ZNSolsEi(a1)\l}"];
+  Node140736622520096 -> Node140736622499728;
+  Node140736622499728 [label="{exit:\l}"];
+
+}

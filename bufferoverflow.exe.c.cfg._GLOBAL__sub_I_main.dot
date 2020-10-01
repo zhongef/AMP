@@ -1,0 +1,11 @@
+digraph "Control-flow graph for function '_GLOBAL__sub_I_main()'." {
+  label="Control-flow graph for function '_GLOBAL__sub_I_main()'.";
+  node [shape=record];
+
+  Node140736622224448 [label="{entry:\l}"];
+  Node140736622224448 -> Node140736622305248;
+  Node140736622305248 [label="{0xb08:\l  return _Z41__static_initialization_and_destruction_0ii(1, 65535)\l}"];
+  Node140736622305248 -> Node140736622244192;
+  Node140736622244192 [label="{exit:\l}"];
+
+}

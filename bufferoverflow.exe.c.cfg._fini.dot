@@ -1,0 +1,11 @@
+digraph "Control-flow graph for function '_fini()'." {
+  label="Control-flow graph for function '_fini()'.";
+  node [shape=record];
+
+  Node140736622523088 [label="{entry:\l}"];
+  Node140736622523088 -> Node140736620193152;
+  Node140736620193152 [label="{0xb94:\l  result\l  return result\l}"];
+  Node140736620193152 -> Node140736622535504;
+  Node140736622535504 [label="{exit:\l}"];
+
+}

@@ -1,0 +1,11 @@
+digraph "Control-flow graph for function 'function_8b0(*func, *arg, *dso_handle)'." {
+  label="Control-flow graph for function 'function_8b0(*func, *arg, *dso_handle)'.";
+  node [shape=record];
+
+  Node140736622325072 [label="{entry:\l  func\l  arg\l  dso_handle\l}"];
+  Node140736622325072 -> Node140736622285840;
+  Node140736622285840 [label="{0x8b0:\l  return __cxa_atexit(func, arg, dso_handle)\l}"];
+  Node140736622285840 -> Node140736622421312;
+  Node140736622421312 [label="{exit:\l}"];
+
+}

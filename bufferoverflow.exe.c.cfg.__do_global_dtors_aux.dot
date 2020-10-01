@@ -1,0 +1,21 @@
+digraph "Control-flow graph for function '__do_global_dtors_aux()'." {
+  label="Control-flow graph for function '__do_global_dtors_aux()'.";
+  node [shape=record];
+
+  Node140736622511408 [label="{entry:\l}"];
+  Node140736622511408 -> Node140736622534464;
+  Node140736622534464 [label="{0x9c0:\l  if (g6 != 0):\l}"];
+  Node140736622534464 -> Node140736622171264 [label="g6 != 0"];
+  Node140736622534464 -> Node140736622298272 [label="g6 == 0"];
+  Node140736622171264 [label="{0x9f8:\l  result\l  return result\l}"];
+  Node140736622171264 -> Node140736622510736;
+  Node140736622298272 [label="{0x9c9:\l  if (g3 != 0):\l}"];
+  Node140736622298272 -> Node140736622211280 [label="g3 != 0"];
+  Node140736622298272 -> Node140736622326448 [label="g3 == 0"];
+  Node140736622510736 [label="{exit:\l}"];
+  Node140736622211280 [label="{0x9d7:\l  __cxa_finalize(IntToPtrCastExpr\<ptr\>(*(IntToPtrCastExpr\<ptr\>(2101256))))\l}"];
+  Node140736622211280 -> Node140736622326448;
+  Node140736622326448 [label="{  result2 = deregister_tm_clones()\l  g6 = 1\l  return result2\l}"];
+  Node140736622326448 -> Node140736622510736;
+
+}

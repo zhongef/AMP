@@ -1,0 +1,47 @@
+digraph "Call graph of the module." {
+  label="Call graph of the module.";
+  node [shape=record];
+
+  Node__start [label="{_start}"];
+  Node_function_8d0 [label="{function_8d0}"];
+  Node_function_8f0 [label="{function_8f0}"];
+  Node___libc_csu_init [label="{__libc_csu_init}"];
+  Node___libc_csu_fini [label="{__libc_csu_fini}"];
+  Node__fini [label="{_fini}"];
+  Node__init [label="{_init}"];
+  Node_function_8e0 [label="{function_8e0}"];
+  Node_deregister_tm_clones [label="{deregister_tm_clones}"];
+  Node_register_tm_clones [label="{register_tm_clones}"];
+  Node___do_global_dtors_aux [label="{__do_global_dtors_aux}"];
+  Node_frame_dummy [label="{frame_dummy}"];
+  Node___cxa_atexit [color="gray50", fontcolor="gray50", label="{__cxa_atexit}"];
+  Node__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc [color="gray50", fontcolor="gray50", label="{_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc}"];
+  Node__ZNSt8ios_base4InitC1Ev [color="gray50", fontcolor="gray50", label="{_ZNSt8ios_base4InitC1Ev}"];
+  Node__ZNSolsEi [color="gray50", fontcolor="gray50", label="{_ZNSolsEi}"];
+  Node___cxa_finalize [color="gray50", fontcolor="gray50", label="{__cxa_finalize}"];
+  Node_main [label="{main}"];
+  Node__Z41__static_initialization_and_destruction_0ii [label="{_Z41__static_initialization_and_destruction_0ii}"];
+  Node__GLOBAL__sub_I_main [label="{_GLOBAL__sub_I_main}"];
+  Node___libc_start_main [color="gray50", fontcolor="gray50", label="{__libc_start_main}"];
+  Node___gmon_start__ [color="gray50", fontcolor="gray50", label="{__gmon_start__}"];
+  Node___asm_hlt [color="gray50", fontcolor="gray50", label="{__asm_hlt}"];
+  Node_function_8b0 [label="{function_8b0}"];
+  Node_function_8c0 [label="{function_8c0}"];
+  Node__start -> Node___libc_start_main;
+  Node__start -> Node___asm_hlt;
+  Node_function_8d0 -> Node__ZNSt8ios_base4InitC1Ev;
+  Node_function_8f0 -> Node___cxa_finalize;
+  Node___libc_csu_init -> Node__init;
+  Node__init -> Node___gmon_start__;
+  Node_function_8e0 -> Node__ZNSolsEi;
+  Node___do_global_dtors_aux -> Node_deregister_tm_clones;
+  Node___do_global_dtors_aux -> Node___cxa_finalize;
+  Node_frame_dummy -> Node_register_tm_clones;
+  Node_main -> Node__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc;
+  Node_main -> Node__ZNSolsEi;
+  Node__Z41__static_initialization_and_destruction_0ii -> Node___cxa_atexit;
+  Node__Z41__static_initialization_and_destruction_0ii -> Node__ZNSt8ios_base4InitC1Ev;
+  Node__GLOBAL__sub_I_main -> Node__Z41__static_initialization_and_destruction_0ii;
+  Node_function_8b0 -> Node___cxa_atexit;
+  Node_function_8c0 -> Node__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc;
+}

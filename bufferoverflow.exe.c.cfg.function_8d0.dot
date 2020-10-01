@@ -1,0 +1,11 @@
+digraph "Control-flow graph for function 'function_8d0()'." {
+  label="Control-flow graph for function 'function_8d0()'.";
+  node [shape=record];
+
+  Node140736622412512 [label="{entry:\l}"];
+  Node140736622412512 -> Node140736622327344;
+  Node140736622327344 [label="{0x8d0:\l  return _ZNSt8ios_base4InitC1Ev()\l}"];
+  Node140736622327344 -> Node140736622307008;
+  Node140736622307008 [label="{exit:\l}"];
+
+}
